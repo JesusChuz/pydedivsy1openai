@@ -11,7 +11,7 @@ OPENAI_EMBEDDINGS_KEY = os.getenv("Openai.ApiKey")
 OPENAI_EMBEDDINGS_VERSION = os.getenv("Openai.ApiVersion")
 
 
-clientaii = AzureOpenAI(
+client = AzureOpenAI(
     api_key=OPENAI_EMBEDDINGS_KEY,
     azure_endpoint = OPENAI_EMBEDDINGS_ENDPOINT,
     api_version = OPENAI_EMBEDDINGS_VERSION
