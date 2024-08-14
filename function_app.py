@@ -6,9 +6,9 @@ import os
 
 myApp = df.DFApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
-OPENAI_EMBEDDINGS_ENDPOINT = os.getenv("Openai.Endpoint")
-OPENAI_EMBEDDINGS_KEY = os.getenv("Openai.ApiKey")
-OPENAI_EMBEDDINGS_VERSION = os.getenv("Openai.ApiVersion")
+OPENAI_EMBEDDINGS_ENDPOINT = os.getenv("OpenaiEndpoint")
+OPENAI_EMBEDDINGS_KEY = os.getenv("OpenaiApiKey")
+OPENAI_EMBEDDINGS_VERSION = os.getenv("OpenaiApiVersion")
 
 
 clientai = AzureOpenAI(
